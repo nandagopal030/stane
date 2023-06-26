@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stane</title>
+    <style>
+        body {
+            font-family: 'PT Sans Caption';
+            font-style: normal;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        a.logo {
+            /* STANE */
+            position: absolute;
+            width: 150px;
+            height: 39px;
+            left: 26px;
+            top: 30px;
+            background-image: url("images/homelogo.png");
+        }
+        a.bag-icon {
+            position: absolute;
+            width: 21px;
+            height: 26px;
+            right: 85px;
+            top: 30px;
+
+            background-image: url("images/bagicon.png");
+        }
+        a.triple-bar {
+            position: absolute;
+            width: 24px;
+            height: 16px;
+            right: 42px;
+            top: 36px;
+
+            background-image: url("images/triplebar.png");
+        }
+        div.shopimg {
+            position: absolute;
+            width: 430px;
+            height: 645px;
+            left: 0px;
+            top: 119px;
+
+            background: url("images/shopimg.jpg");
+        }
+        p.products {
+            position: absolute;
+            width: 103px;
+            height: 31px;
+            left: 28px;
+            top: 780px;
+
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 31px;
+            color: #000000;
+        }
+        div.product-view {
+            position: absolute;
+            width: 171px;
+            height: 217px;
+
+            background: #D9D9D9;
+            
+        }
+        button.add-to-bag {
+            position: absolute;
+            width: 134px;
+            height: 44px;
+            
+            color: white;
+            background: #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 22px;
+            transition: 0.3s ease-in-out;
+        }
+        button.add-to-bag:hover {
+            background: #eeeeee;
+            color: #000000;
+            
+        }
+    </style>
+</head> 
+<body>
+    <a href="home.html" class="logo"></a>
+    <a href="bag.html" class="bag-icon"></a>
+    <a href="account.html" class="triple-bar"></a>
+    <div class="shopimg"></div>
+    <p class="products">Products</p>
+
+    <div class="product-view" style="left: 28px; top: 842px; background: url(images/viewproduct.jpg); background-size: cover; background-position: center;" onclick="openProduct()"></div>
+    <button class="add-to-bag" style="left: 47px; top: 1075px;" onclick="openBag()"> <b>Add to bag</b> </button>
+    <div class="product-view" style="left: 227px; top: 842px; background: url(images/product1.jpg); background-size: cover; background-position: center;" onclick="openProduct()"></div>
+    <button class="add-to-bag" style="left: 246px; top: 1075px;" onclick="openBag()"><b>Add to bag</b> </button>
+    <div class="product-view" style="left: 28px; top: 1162px; background: url(images/product2.jpg); background-size: cover; background-position: center;" onclick="openProduct()"></div>
+    <button class="add-to-bag" style="left: 47px; top: 1395px;" onclick="openBag()"><b>Add to bag</b> </button>
+    <div class="product-view" style="left: 227px; top: 1162px; background: url(images/product3.jpg); background-size: cover; background-position: center;" onclick="openProduct()"></div>
+    <button class="add-to-bag" style="left: 246px; top: 1395px;" onclick="openBag()"><b>Add to bag</b> </button>
+    <div class="product-view" style="left: 28px; top: 1493px; background: url(images/product4.jpg); background-size: cover; background-position: center;" onclick="openProduct()"></div>
+    <button class="add-to-bag" style="left: 47px; top: 1726px;" onclick="openBag()"><b>Add to bag</b> </button>
+    <div class="product-view" style="left: 227px; top: 1493px; background: url(images/product5.jpg); background-size: cover; background-position: center;" onclick="openProduct()"></div>
+    <button class="add-to-bag" style="left: 246px; top: 1726px;" onclick="openBag()"><b>Add to bag</b> </button>
+    <script>
+        function openBag() {
+            window.location.href = "bag.html";
+        }
+        function openProduct() {
+            window.location.href = "viewproduct.html";
+        }
+    </script>
+</body>
+</html>

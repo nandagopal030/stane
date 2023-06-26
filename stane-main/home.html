@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stane</title>
+    <style>
+        body {
+            font-family: 'PT Sans Caption';
+            font-style: normal;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        a.logo {
+            /* STANE */
+            position: absolute;
+            width: 150px;
+            height: 39px;
+            left: 26px;
+            top: 30px;
+            /*
+            font-family: 'Racing Sans One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 60px;
+
+            color: #000000;
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+            background-image: url("images/homelogo.png");
+        }
+        a.bag-icon {
+            position: absolute;
+            width: 21px;
+            height: 26px;
+            right: 85px;
+            top: 30px;
+
+            background-image: url("images/bagicon.png");
+        }
+        a.triple-bar {
+            position: absolute;
+            width: 24px;
+            height: 16px;
+            right: 42px;
+            top: 36px;
+
+            background-image: url("images/triplebar.png");
+        }
+        div.gundam {
+            position: absolute;
+            width: 384px;
+            height: 566px;
+            left: 23px;
+            top: 122px;
+
+            background-image: url("images/gundam.jpg");
+        }
+        p.gundam-text {
+            position: absolute;
+            width: 300px;
+            height: 41px;
+            left: 70px;
+            top: 181px;
+
+            font-family: 'PT Sans Caption';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            /* line-height: 41px; */
+
+            color: #FFFFFF;
+        }
+        p.edition-gundam {
+            position: absolute;
+            width: 189px;
+            height: 31px;
+            left: 23px;
+            top: 712px;
+
+            font-weight: 700;
+            line-height: 31px;
+            /* identical to box height */
+            color: #000000;
+        }
+        p.edition-gundam-content {
+            position: absolute;
+            width: 308px;
+            height: 78px;
+            left: 26px;
+            top: 767px;
+
+            font-weight: 400;
+            color: #000000;
+        }
+        button.shop {
+            position: absolute;
+            width: 129px;
+            height: 46px;
+            left: 23px;
+            top: 875px;
+            
+
+            font-weight: 700;
+            /* identical to box height */
+            color: #FFFFFF;
+            background: #000000;
+            border-radius: 31px;
+            transition: 0.3s ease-in-out;
+        }
+        button.shop:hover {
+            background: #eeeeee;
+            color: #000000;
+        }
+        div.cc {
+            position: absolute;
+            width: 384px;
+            height: 565px;
+            left: 23px;
+            top: 971px;
+
+            background: url("images/cc.jpg");
+        }
+        p.cc-text {
+            position: absolute;
+            width: 270px;
+            height: 41px;
+            left: 82px;
+            top: 1034px;
+
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 41px;
+
+            color: #FFFFFF;
+        }
+        p.edition-cc {
+            position: absolute;
+            width: 222px;
+            height: 31px;
+            left: 26px;
+            top: 1560px;
+
+            font-weight: 700;
+            /* identical to box height */
+
+            color: #000000;
+        }
+        p.edition-cc-text {
+            position: absolute;
+            width: 343px;
+            height: 78px;
+            left: 26px;
+            top: 1615px;
+
+            font-weight: 400;
+            font-size: 20px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="logo"></a>
+    <a href="bag.html" class="bag-icon"></a>
+    <a href="account.html" class="triple-bar"></a>
+    <div class="gundam"></div>
+    <p class="gundam-text">STANE X GUNDAM</p>
+    <p class="edition-gundam">Edition Gundam</p>
+    <p class="edition-gundam-content">Combining the soul of Gundam
+        with sustainable clothing for
+        our Gundam escorts.</p>
+    <button class="shop" onclick="openShop()">Shop Now</button>
+    <div class="cc"></div>
+    <p class="cc-text">CARS & COFFEE</p>
+    <p class="edition-cc">Edition CC - limited</p>
+    <p class="edition-cc-text">All new Exclusive edition with the 
+        essence of smok’in turbos for all
+        the car guys out there</p>
+    <button class="shop" style="left: 23px; top: 1723px;" onclick="openShop()">Shop Now</button>
+    <script>
+        function openShop() {
+            window.location.href = "shop.html";
+        }
+    </script>
+</body>
+</html>

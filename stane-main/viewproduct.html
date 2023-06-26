@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stane</title>
+    <style>
+        body {
+            font-family: 'PT Sans Caption';
+            font-style: normal;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        a.logo {
+            /* STANE */
+            position: absolute;
+            width: 150px;
+            height: 39px;
+            left: 26px;
+            top: 30px;
+            background-image: url("images/homelogo.png");
+        }
+        a.bag-icon {
+            position: absolute;
+            width: 21px;
+            height: 26px;
+            right: 85px;
+            top: 30px;
+
+            background-image: url("images/bagicon.png");
+        }
+        a.triple-bar {
+            position: absolute;
+            width: 24px;
+            height: 16px;
+            right: 42px;
+            top: 36px;
+
+            background-image: url("images/triplebar.png");
+        }
+        div.product-img {
+            position: absolute;
+            width: 416px;
+            height: 583px;
+            left: 7px;
+            top: 129px;
+
+            background: url("images/viewproduct.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 16px;
+            transition: background-image 0.5s ease-in-out;
+        }
+        .dot {
+            position: absolute;
+            height: 7px;
+            width: 7px;
+            background-color: #bbb;
+            border-radius: 50%;
+            border-radius: 7px;
+        }
+        p.stane1 {
+            position: absolute;
+            width: 80px;
+            height: 26px;
+
+            font-weight: 700;
+            /* identical to box height */
+
+            color: #000000;
+        }
+        p.stane2 {
+            position: absolute;
+            width: 115px;
+            height: 21px;
+            left: 27px;
+            top: 801px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            /* identical to box height */
+
+            color: #000000;
+        }
+        .color {
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 33.03px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid #ACACAC;
+        }
+        .color:hover {
+            border-color: orange;
+            border-width: 2px;
+        }
+        .size {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            color:#000000;
+            text-align: center;
+            padding-top: 5px;
+            background: #C3C3C3;
+            border-radius: 4px;
+            border: 1px solid #ACACAC;
+            transition: 0.2s ease;
+        }
+        div.size:hover {
+            color:#FFFFFF;
+            background: #555555;
+        }
+        .list {
+            position: absolute;
+            width: 200px;
+            height: 84px;
+            left: 17px;
+            top: 1015px;
+        }
+        #more {display: none;}
+        button.add-to-bag {
+            position: absolute;
+            width: 368px;
+            height: 49px;
+            left: 26px;
+            top: 1168px;
+            font-weight: 700;
+            font-size: 20px;
+            color: #FFFFFF;
+            background: #BE0000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            border-color: #BE0000;
+            transition: 0.3s ease-in-out;
+        }
+        button.add-to-bag:hover {
+            color:#870000;
+            background-color: #efbebe;
+        }
+    </style>
+</head>
+<body>
+    <a href="home.html" class="logo"></a>
+    <a href="bag.html" class="bag-icon"></a>
+    <a href="account.html" class="triple-bar"></a>
+    <div class="product-img"></div>
+    <span class="dot" style="left: 189px; top: 725px" onclick="changeImg(1)"></span>
+    <span class="dot" style="left: 200px; top: 725px" onclick="changeImg(2)"></span>
+    <span class="dot" style="left: 211px; top: 725px" onclick="changeImg(3)"></span>
+    <span class="dot" style="left: 222px; top: 725px" onclick="changeImg(4)"></span>
+    <span class="dot" style="left: 233px; top: 725px" onclick="changeImg(5)"></span>
+    <p class="stane1" style="left: 27px;top: 771px;"><b>STANE</b></p>
+    <p class="stane1" style="left: 338px;top: 771px;"><b>Rs. 999</b></p>
+    <p class="stane2" style="left: 27px;top: 801px;">Oversized tees</p>
+    <p class="stane2" style="left: 300px;top: 801px;">MRP <del>RS. 1599</del></p>
+    <p class="stane1" style="width:100px; left: 27px;top: 832px;"><b>Color</b></p>
+    <p class="stane1" style="width:100px; left: 331px;top: 820px;color: #BE0000;"><b>40% off</b></p>
+    <div class="color" style="left: 27px; top: 885px;background: #000000;"></div>
+    <div class="color" style="left: 68px; top: 885px;background: #ACACAC;"></div>
+    <div class="color" style="left: 111px; top: 885px;background: #FFFFFF"></div>
+    <p class="stane1" style="width:100px; left: 27px;top: 913px;"><b>Select size</b></p>
+    <div class="size" style="left: 31px; top: 970px;"><b>S</b></div>
+    <div class="size" style="left: 73px; top: 970px;"><b>M</b></div>
+    <div class="size" style="left: 114px; top: 970px;"><b>L</b></div>
+    <div class="size" style="left: 155px; top: 970px;"><b>XL</b></div>
+    <p class="stane1" style="width: 73px;left: 27px;top: 994px;"><b>Overview</b></p>
+    <div class="list">
+        <ul>
+            <li>Vented hems</li>
+            <li>Regular Fit</li>
+            <span id="dots" style="color:#BE0000" onclick="readmore()">...</span>
+            <span id="more">
+            <li>Machine wash</li>
+            <li>Cotton</li>
+            </span>
+        </ul>
+    </div>
+    <button class="add-to-bag" onclick="addToBag()"><b>Add to Bag</b></button>
+    <script>
+        function changeImg(dotIndex) {
+            var productImg = document.querySelector('.product-img');
+            var dots = document.querySelectorAll('.dot');
+            
+            var images = [
+                "images/product1.jpg",
+                "images/product2.jpg",
+                "images/product3.jpg",
+                "images/product4.jpg",
+                "images/product5.jpg"
+            ];
+            
+            // Change background image of the product image
+            productImg.style.backgroundImage = "url('" + images[dotIndex - 1] + "')";
+            
+            // Reset color of all dots
+            dots.forEach(function(dot) {
+                dot.style.backgroundColor = "#bbb";
+            });
+            
+            // Change color of the clicked dot to black
+            var clickedDot = dots[dotIndex - 1];
+            clickedDot.style.backgroundColor = "black";
+        }
+        function readmore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+
+            dots.style.display = "none"; 
+            moreText.style.display = "inline";
+        }
+        function addToBag() {
+            window.location.href = "bag.html";
+        }
+    </script> 
+    
+</body>
+</html>

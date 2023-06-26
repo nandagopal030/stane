@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stane - Login</title>
+    <style>
+        body {
+            font-family: 'PT Sans Caption', sans-serif;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 26px;
+            margin: 0;
+            padding: 0;
+            background-color: #F7F7F7;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background-color: #FFFFFF;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 150px;
+            height: 39px;
+            margin-bottom: 30px;
+            background-image: url("images/homelogo.png");
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #CCCCCC;
+        }
+
+        .input-group input[type="submit"] {
+            background-color: #000000;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: 0.3s ease-in-out    ;
+        }
+
+        .input-group input[type="submit"]:hover {
+            background-color: #eeeeee;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo"></div>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="input-group">
+                    <input type="submit" value="Login" onclick="validateCredentials(event)">
+                </div>
+                <p id="error-message" style="display: none; color: red;">Invalid username or password.</p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateCredentials(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the entered username and password
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the username and password are correct
+            if (username === "j" && password === "j") {
+                // Redirect to home.html if the credentials are correct
+                window.location.href = "home.html";
+            } else {
+                // Display error message if the credentials are incorrect
+                var errorMessage = document.getElementById("error-message");
+                errorMessage.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

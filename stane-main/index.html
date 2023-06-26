@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stane</title>
+    <style>
+        /* emile-seguin-R9OueKOtGGU-unsplash 1 */
+
+        body {
+            position: absolute;
+            max-width: 430px;
+            max-height: 932px;
+            left: 0px;
+            top: 0px; 
+            background-image: url("images/coverbg.jpg");
+            background-repeat: no-repeat;
+            mix-blend-mode: darken;
+        }
+        button.cover-logo {
+            /* Adobe_Express_20230228_1544170_1 1 */
+            position: absolute;
+            /* oldlogo 
+            width: 182px;
+            height: 79px; */
+            width: 150px;
+            height: 39px;
+            left: 138px;
+            top: 210px;
+            z-index: -1;
+            border: none;
+            /*cursor: pointer;*/
+            outline: none;
+            margin: auto;
+            background: url("images/mainlogo.jpg");
+            mix-blend-mode: darken;
+        }
+        button.discover {
+            /* Rectangle 1 */
+            position: absolute;
+            width: 252px;
+            height: 59px;
+            left: 89px;
+            top: 437px;
+            border: none;
+            z-index: -2;
+            font-family: 'PT Sans Caption';
+            font-style:bold;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            /* identical to box height */
+            color: #000000;
+
+            /* background: linear-gradient(271.02deg, #ACACAC -13.13%, rgba(172, 172, 172, 0) 129.48%); */
+            background: linear-gradient(271.02deg, #acacac -300.48%, rgba(172, 172, 172, 0) 129.48%);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 29.5px;
+            mix-blend-mode: darken; 
+            transition: transform 0.3s ease;
+        }
+        button.discover:hover {
+            background: linear-gradient(271.02deg, #000000 -300.48%, rgba(172, 172, 172, 0) 129.48%);
+            transform: scale(1.1);
+        }
+        a.arrow {
+            /* arrow_back_ios app, application, arrow, back, chevron, components, direction, interface, ios,
+             left, navigation, previous, screen, site, ui, ux, web, website
+            */
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 294px;
+            top: 454px;
+            background-image: url("images/arrow_back_ios.png"); 
+            z-index: -1;   
+        }
+        p {
+            /* Discover */
+            position: absolute;
+            width: 83px;
+            height: 26px;
+            left: 174px;
+            top: 437px; /* changed from 453*/
+
+            font-family: 'PT Sans Caption';
+            font-style:bold;
+            font-weight: 700;   
+            font-size: 20px;
+            line-height: 26px;
+            /* identical to box height */
+            color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="cover-logo"></button>
+    <!-- <a href="#" class="discover"></a> -->
+    <button class="discover" onclick="openHomepage()">Discover</button>
+    <a href="login.html" class="arrow"></a>
+    <!-- <p>Discover</p> -->
+    <script>
+        function openHomepage() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
+
